@@ -1,3 +1,3 @@
 # Personal website
 
-An attempt at an old early 90s to early 2000s themed website for personal use.
+An attempt at an old 90s to 2000s era website for personal use.
