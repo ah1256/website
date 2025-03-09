@@ -1,7 +1,127 @@
--- credits --
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel=stylesheet href="./src/style.css">
+    <title>Clown Town</title>
+	</head>
+
+  <body>
+    <!-- HEADER -->
+    <div class="window" style="width:70%; margin: auto;">
+      <div class="title-bar">
+        <div class="title-bar-text"> Hello World! </div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+	  			<button aria-label="Maximize"></button>
+	  			<button aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="wordArtWrapper"><div class="wordArt"> Clown Town </div></div>
+    </div>
+		<!-- TODO: make control buttons...bigger -->
+		<div class="window" style="width:70%; margin: auto;"> <!-- web browser window -->
+			<div class="title-bar">
+				<div class="title-bar-text"> Untitled Web Browser :) </div>
+				<div class="title-bar-controls">
+					<button aria-label="Minimize"></button>
+					<button aria-label="Maximize"></button>
+					<button aria-label="Close"></button>
+				</div>
+
+			</div>
+
+			<!-- build the web browser....... -->
+			<!-- file,view,etc -->
+			<fieldset>
+				<u>F</u>ile  
+				<u>E</u>dit  
+				<u>V</u>iew  
+				F<u>a</u>vorites  
+				<u>T</u>ools  
+				<u>H</u>elp
+			</fieldset>
+			<!-- address bar -->
+			<fieldset>
+				<div class="field-row">
+					<label for="text17">Address</label>
+					<input disabled type="text" style="width: 100%" value="cool_stuff.html"/>
+				</div>
+			</fieldset>
+
+			<div>
+				<!-- favorites (bookmarks) -->
+				<div style="width: 20%; display: inline-block; vertical-align: top;">
+					<fieldset>Favorites</fieldset>
+					<ul class="tree-view"> 
+						<li><u><a href="./index.html">Home</a></u></li>
+						<li><u><a href="./about.html">About</a></u></li>
+						<li><u><a href="./cool_stuff.html">Cool Stuff</a></u></li>
+						<li><u><a>Guestbook</a></u></li>
+					</ul>
+				</div>
+				<!-- actual web page -->
+				<div style="width: 79%; height: 100%; display: inline-block; vertical-align: top;">
+					<ul class="tree-view">
+						<li>98.css
+							<ul>
+								<li style="color: #000000; font-size: 1.1rem">
+									The stylesheet that I used for this website! Very neat and cool!
+									<br />
+									link: <a href="github.com/jdan/98.css" style="color: var(--magenta);">
+										<u>github.com/jdan/98.css</u></a>
+								</li>
+							</ul>
+						</li>
+						<br /><br />
+						<li>0DE5
+							<ul>
+								<li style="color: #000000; font-size: 1.1rem">
+									A very COOL project that has a lot of free content!
+									Fun stuff to do like modifying the bytes of an executeable 
+									to get it to do what you want.  
+									Advertised as a reintroduction to programming.  
+									Every video includes some excercises to do for free.  
+									Paying the monthly subscription unlocks additional excercises to do. 
+									It seems all videos are also on youtube! 
+									Check it out, if you'd like.  
+									
+									<br />
+									link: <a href="https://www.0de5.net/" style="color: var(--magenta);">
+										<u>0de5.net</u></a>
+								</li>
+							</ul>
+						</li>
+						<br /><br />
+						<li>localghost
+							<ul>
+								<li style="color: #000000; font-size: 1.1rem">
+									Neat blog to read! WordArt in the header was an idea from one of her blog posts.
+
+									<br />
+									link: <a href="https://localghost.dev" style="color: var(--magenta);">
+										<u>localghost.dev</u></a>
+								</li>
+							</ul>
+
+						</li>
+						<li>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+			<!-- browser status bar -->
+			<div class="status-bar">
+        <p class="status-bar-field" style="text-align: left; width: 80%">Done</p>
+        <p class="status-bar-field"> </p>
+        <p class="status-bar-field"> </p>
+        <p class="status-bar-field">Internet</p>
+      </div>
+
+		</div>
+    <br /> 
 
 
-Gifs in the header are from a Bishoujo Senshi Sailormoon Super S: Zenin Senkai
+  </body>
+</html>
 
-
-word art css: 

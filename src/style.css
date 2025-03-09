@@ -13,9 +13,9 @@
   --window-frame: #0a0a0a;
   --dialog-blue: #000080;
   --dialog-blue-light: #1084d0;
-  --dialog-gray: #808080;
+  --dialog-gray: #808080; 
   --dialog-gray-light: #b5b5b5;
-  --link-blue: #0000ff;
+  --link-blue: #137a7f; /* #0000ff; */
 
   /* Personal Colors */
   --black: #373b3e;
@@ -99,7 +99,7 @@
 
 body {
   font-family: Arial;
-  font-size: 12px;
+  font-size: 12rem;
   color: #222222;
   background-color: var(--black);
 }
@@ -115,7 +115,7 @@ ul.tree-view,
 .title-bar {
   font-family: "Pixelated MS Sans Serif", Arial;
   -webkit-font-smoothing: none;
-  font-size: 11px;
+  font-size: 1rem;
 }
 
 h1 {
@@ -136,7 +136,7 @@ h4 {
 
 u {
   text-decoration: none;
-  border-bottom: 0.5px solid #222222;
+  border-bottom: 0.5px solid #ff06b5;
 }
 
 button,
@@ -192,7 +192,7 @@ input[type="reset"]::-moz-focus-inner {
 :disabled + label,
 :read-only,
 :read-only + label {
-  color: var(--button-shadow);
+  color: var(--magenta); /* change text color here */
 }
 
 button:disabled,
@@ -203,14 +203,24 @@ input[type="reset"]:disabled,
 }
 
 .wordArt {
+  /* Make sure the div can be clicked through :) */
+  pointer-events: none;
+  /* gradient */
   background: linear-gradient(
     90deg,
     var(--magenta),
-    var(--mikuBlueDark)
+    var(--mikuBlue)
     );
   background-clip: text; /* Make background only show wherever there's text */
   color: transparent;
-  font-family: Consolas;
+  
+  font-family: Impact, sans-serif;
+  font-size: 100px;
+  text-align: center;
+}
+
+.wordArtWrapper {
+	filter: drop-shadow(10px -10px 0px var(--mikuBlueDark));
 }
 
 .window {
@@ -472,6 +482,7 @@ textarea {
   -moz-appearance: none;
   appearance: none;
   border-radius: 0;
+  cursor: url("./cursors/Text_Select.cur"), auto;
 }
 
 input[type="text"],
@@ -647,11 +658,17 @@ select:active {
 }
 
 a {
-  color: var(--link-blue);
+  color: var(--black);
+  cursor: url("./cursors/Link_Select.cur"), auto;
 }
 
 a:focus {
   outline: 1px dotted var(--link-blue);
+}
+
+p {
+  cursor: url("./cursors/Text_Select.cur"), auto;
+  text-align: center;
 }
 
 ul.tree-view {
